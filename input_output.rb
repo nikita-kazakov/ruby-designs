@@ -230,3 +230,76 @@ class User
   end
 
 end
+
+
+
+
+
+#Duck Typing
+class Xmlparser
+
+  def parse
+    puts "an instance of xml parser class received the parse message."
+  end
+
+end
+
+class Jsonparser
+
+  def parse
+    puts "an instance of Json parser class received the parse message."
+  end
+
+end
+
+class GenericParser
+
+  def parse(parser)
+    parser.parse
+  end
+
+end
+
+genparse = GenericParser.new
+genparse.parse(Xmlparser.new) #An instance of xml parser class received the parse message.
+genparse.parse(Jsonparser.new) #An instance of JSON parser class received the parse message.
+
+puts "\n\n\n\n"
+
+#Decorator Pattern
+class Parser
+
+  def parse
+    puts "The Parser class received the parse method"
+  end
+
+end
+
+class Xmlparser
+  def initialize(parser) #simply adding a parameter to class.
+    @parser = parser
+  end
+
+  def parse
+    puts "an instance of Xmlparser class received the parse message."
+    @parser.parse
+  end
+end
+
+class Jsonparser
+
+  def initialize(parser) #simply adding a parameter to class.
+    @parser = parser
+  end
+
+  def parse
+    puts "an instance of Json parser class received the parse message."
+    @parser.parse
+  end
+
+end
+
+#Let's test out Decorator pattern:
+puts 'Using the XML parser'
+parser = Parser.new
+Xmlparser.new(parser)
