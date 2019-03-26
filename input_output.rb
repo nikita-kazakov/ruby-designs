@@ -108,7 +108,7 @@ puts slowercase("CoOlStUFf")
 
 #Step 2 --> Make it sleep for 2 seconds.
 def slowercase(a_string)
-  sleep 2
+  #sleep 2
   #TODO: return a lowercase version of the string
   a_string
 end
@@ -152,7 +152,7 @@ print_a_line(PutsPrinter.new, "Hi There")
 #Let's revisit and make Slowercase Polymorphic.
 #Here's the original code:
 def slowercase(a_string)
-  sleep 0.5
+  #sleep 0.5
   a_string.downcase
 end
 
@@ -175,7 +175,7 @@ end
 
 class Slower
   def slow
-    sleep 1
+    #sleep 1
   end
 end
 
@@ -191,46 +191,7 @@ puts Slowercase.new(Slower.new, Lowercaser.new).slowercase("FuNkYCASe")
 
 
 
-#Skip to the East Method for OO.
-require 'set'
-
-class RubySteps
-
-  def initialize(emailer)
-    @emailer = emailer
-    @users = Set.new
-  end
-
-  def add_user(user)
-    @users.add(user)
-    user.deliver_welcome_email(@emailer)
-    @users.each {|u| u.member_registered(user, @emailer) }
-    true
-  end
-
-end
-
-class User
-  attr_reader :name
-
-  def initialize(name, email)
-    @name = name
-    @email = email
-    @friends = Set.new
-  end
-
-  def deliver_welcome_email(emailer)
-    emailer.deliver_email(
-        subject: "Welcome to RubySteps, #{@name}!",
-        to_email: @email,
-        to_name: @name,
-        body: "This is gonna be so much fun"
-    )
-    true
-  end
-
-end
-
+#
 
 
 
@@ -302,4 +263,106 @@ end
 #Let's test out Decorator pattern:
 puts 'Using the XML parser'
 parser = Parser.new
-Xmlparser.new(parser)
+Xmlparser.new(parser).parse
+
+puts "\n\n"
+Jsonparser.new(parser).parse
+
+#let's use both parsers
+Jsonparser.new(Xmlparser.new(parser)).parse
+
+#Now let's simplify code using polymorphism.
+# Here's the old code:
+class Parser
+  def parse(type)
+    puts 'The Parser class received the parse method'
+    if type == :xml
+      puts 'An instance of the XmlParser class received the parse message'
+    elsif type == :json
+      puts 'An instance of the JsonParser class received the parse message'
+    end
+  end
+end
+
+#Refactored code:
+class Parser
+  def parse(parser)
+    puts 'The Parser class received the parse method'
+    parser.parse
+  end
+end
+
+class XmlParser
+  def parse
+    puts 'An instance of the XmlParser class received the parse message'
+  end
+end
+
+class JsonParser
+  def parse
+    puts 'An instance of the JsonParser class received the parse message'
+  end
+end
+
+#Apply Decorator
+
+
+
+#Object Methods - March 26, 2019
+
+object = Object.new
+
+
+class Object
+  def reopened
+    puts "We can re-open the class"
+  end
+end
+
+object.reopened #This simply calls the object instance and the re-opened method.
+
+module SomeModule
+  def mod_method
+    puts "we can define a method in a module and include it into a class"
+  end
+end
+
+Object.include SomeModule #Notice I'm calling on a CLASS here, not the instance of the class.
+object.mod_method #The message shows up.
+
+
+module MyModule
+  def singleton_mod_method
+    puts "we can define a method in a module and extent the object directly"
+  end
+end
+
+object.extend MyModule
+object.singleton_mod_method #<==worked!
+
+#you can also directly add a method on an object like this:
+def object.a_singleton_method
+  puts "Directly on the object...singleton method"
+end
+object.a_singleton_method
+
+puts object.inspect
+p object.inspect
+p Object.ancestors #[Object, Somemodule, Kernel, BasicObject].
+#Notice that the module sits right in between the object and the ancestor object.
+
+
+#Going EAST for OOP
+#Tightly coupled code happens when TOO MANY messages go back and forth..
+#Also when each side of coupling knows too much about the details of the other...
+#It means send messages to objects you know about, pass along the ONLY info they need to get the job done.
+#puts for example an example of EAST oriented code. It takes ANY object and calls the to_s method (duck typing)
+
+def print_something(string)
+  puts string
+end
+
+print_something("hi")
+#this is pretty good decoupled code above...
+
+
