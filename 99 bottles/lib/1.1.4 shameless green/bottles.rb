@@ -34,3 +34,6 @@ class Bottles
   end
 
 end
+
+Bottles.new.verse(98)
+puts Bottles.new.verses(3, 0)
