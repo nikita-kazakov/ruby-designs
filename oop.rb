@@ -48,3 +48,32 @@ a.singleton_class #=> #<Class:#<Object:0x000056278debc750>>
 
 
 
+#Start Skoglund Classes and Methods
+# Classes create objects with states and behaviors.
+# state = attributes (instance variables)
+# behavior = methods
+#
+class Person
+
+end
+
+#An instance is a single object created from a class
+bill = Person.new #<==created an instance called bill.
+bob = Person.new
+
+#Both bill and bob are different objects!
+p bill.object_id #<47227400271520
+p bob.object_id  #<47227400271500
+
+#If you want to take this class into it's own file remember to call it:
+# relative_require 'person'
+
+
+#Let's talk attributes. It's properties of an object. The car is green. The name is bob.
+#These will be stored as variables. Instance if it's part of class. There are many different variables:
+# Global = $variable
+# Class = @@variable
+# Instance = @variable
+# local = variable
+# block = variable
+
