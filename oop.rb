@@ -77,3 +77,171 @@ p bob.object_id  #<47227400271500
 # local = variable
 # block = variable
 
+#How about reader and writer methods? You can't directy access instance variables!
+
+class Animal
+  def initialize
+
+  end
+
+  def noise
+    @noise
+  end
+
+  def noise=(value)
+    @noise = value
+  end
+end
+
+animal = Animal.new
+p animal.noise="Oink" #<==sets "Oink"
+p animal.noise  #<= returns "Oink"
+
+#How about attribute methods?
+#Attr_reader (Getter), Attr_write(setter), Attr_accessor(Getter and setter)
+#
+
+class Animal
+  attr_accessor :noise
+end
+
+p animal.noise="Oink" #<==sets "Oink"
+p animal.noise  #<= returns "Oink"
+
+#Why would you want to make attribute only readable? You want direct control over variables.
+#Let's say you're creating a fighting game and you have a new fighter. You want him to start with a health of 100.
+#You don't want anyone else setting that health to 1000 or some weird negative number such as -444.
+
+class Fighter
+  attr_reader :health
+
+  def initialize
+    @health = 100
+  end
+
+  def health_increase
+    @health = @health + 10
+  end
+
+  def health_decrease
+    @health = @health - 30
+  end
+
+end
+
+ryu = Fighter.new
+p ryu.health #<= 100
+ryu.health_decrease
+p ryu.health #<= 70
+
+#Your methods should be controlling the health, not someone outside of the methods.
+#Let's say we want to change the variable in this case:
+class Fighter
+  attr_accessor :health
+
+  def health_superman
+    self.health = 150 #<==This self dot here calls the health METHOD, not the @health instance variables. This is correct
+                      #It's not ideal to change instance variables directly. Use a getter / setter method.
+  end
+end
+
+ryu = Fighter.new
+p ryu #<=#<Fighter:0x00005637878b0780 @health=100>
+p ryu.health_superman
+p ryu #<Fighter:0x000055d859ac4338 @health=150>
+
+
+
+#Let's talk about method access control.
+#We already know you can't access instance variables from OUTSIDE the class. It's called encapsulation. Think Moat.
+#We can do the same for methods. We can restrict access to methods outside.
+#There are three method controls:
+# Public : normal methods (default)
+# private : Can only be called INSIDE the class...not outside.
+# protected: Can only be called by instance of class and it's subclasses.
+
+class Fighter
+
+  private
+  def scream
+    puts "AHHHHHHH"
+  end
+
+end
+
+ryu = Fighter.new
+#ryu.scream  <== This returns an error. It's a private method.
+#
+
+#What does the initialize method do?
+# initialize is automatically run when a new instance is created.  It always runs first.
+#It's useful if you want to set attributes to a default state or specific state.
+#You set it as specific state by providing ARGUMENTS to the new method.
+
+
+class Fighter
+  def initialize()
+    @health = 100
+    puts "Thank you for creating me!"
+  end
+end
+
+p Fighter.new #<=#<Fighter:0x0000558368043e68 @health=150>, Thank you for creating me!
+
+
+#It's common to see the initialize method with a HASH.
+# We're passing a hash in a variable called options.
+# We're then saying, grab the key for the value called "name".....or if that's not passed, then return default 'Smith'
+class Fighter
+  def initialize (options ={})
+    @name = options[:name] || 'Smith'
+  end
+end
+
+p Fighter.new #<==#<Fighter:0x00005562f1f27458 @name="Smith">
+p Fighter.new(name:"Ryu") #<#<Fighter:0x00005562f1f272c8 @name="Ryu">
+
+#You can also use keyword arguments implemented in Ruby 2.0 and above. Use this instead of above hash passing.
+class Fighter
+  def initialize(name: "Unknown", nationality: "Unknown")
+    @name = name
+    @nationality = nationality
+  end
+end
+
+p Fighter.new #< #<Fighter:0x000055b773036b48 @name="Unknown", @nationality="Unknown">
+p Fighter.new(name:"Ryu", nationality: "Japanese") #< #<Fighter:0x000055e2837d6b10 @name="Ryu", @nationality="Japanese">
+
+#Advantage here is that you don't need to remember the ORDER of things.
+
+
+##CHALLENGE: Model a set of Dice
+# A DiceSet instance contains 2 DIE
+# A method DiceSet.roll should roll die and return random # between 0 and 5
+# DiceSet.display should display values of both dice
+
+#Use IRB to play around by providing it a 'require_relative 'oop.rb'
+#
+
+class Dice
+  attr_reader :die_one, :die_two
+
+  def roll
+    #self.die_one = rand(1..6) #<=this won't work because you didn't create an attr_writer method.
+    @die_one = rand(1..6)
+    @die_two = rand(1..6)
+  end
+
+  def display
+    puts "Die 1: #{self.die_one}"
+    puts "Die 2: #{self.die_two}"
+  end
+
+end
+
+
+dice = Dice.new
+dice.roll
+dice.display #< Die 1: 1 Die 2: 6
+
+#ON CLASS ATTRIBUTES AND METHODS SECTION.
