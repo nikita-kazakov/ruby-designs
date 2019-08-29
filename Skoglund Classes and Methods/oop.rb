@@ -202,6 +202,7 @@ p Fighter.new #<==#<Fighter:0x00005562f1f27458 @name="Smith">
 p Fighter.new(name:"Ryu") #<#<Fighter:0x00005562f1f272c8 @name="Ryu">
 
 #You can also use keyword arguments implemented in Ruby 2.0 and above. Use this instead of above hash passing.
+#Make sure you give defaults to each keyword argument you put in below.
 class Fighter
   def initialize(name: "Unknown", nationality: "Unknown")
     @name = name
@@ -244,4 +245,83 @@ dice = Dice.new
 dice.roll
 dice.display #< Die 1: 1 Die 2: 6
 
+
 #ON CLASS ATTRIBUTES AND METHODS SECTION.
+#Before we talked about Instance methods and instance attributes.
+#Here, we'll talk about CLASS METHODS and ATTRIBUTES
+# August 30, 2019
+
+#Class Methods relate to the class itself, not a specific instance.
+#This means we call them directly on a class, not on an instance.
+
+#Examples:
+# Bicycle.all_brands or Animal.new or Invoice.find(2)
+
+#We define these class methods differently with (SELF). Self Refers to the class itself. It's just a stand-in for class name.
+
+class Car
+  def self.description
+    puts "I'm a car factory."
+  end
+end
+
+puts Car.description #<= "I'm a car factory"
+
+#You could also write def Car.description (same thing)
+class Car
+  def Car.description
+    puts "I'm a car factory."
+  end
+end
+
+puts Car.description #<= "I'm a car factory"
+
+#Let's explore more. This below is something we can a factory pattern:
+class Product
+  attr_accessor :name, :price
+
+  def initialize(price=0)
+    @price = price
+  end
+
+  def self.exclusive
+    Product.new(45)
+  end
+
+  def self.standard
+    Product.new(30)
+  end
+
+  def self.discounted
+    Product.new(15)
+  end
+
+end
+
+#So now if I call a class method "discounted", it returns a new product with a certain default price.
+# We created 2 instances, book1 and book2.
+p book1 =  Product.discounted #<=#<Product:0x00005621b04800a8 @price=15>
+p book2 = Product.exclusive #<=#<Product:0x00005621b04800a8 @price=45>
+
+#According to the Ruby Documentation:
+# class method: Array.new
+# instance method: Array#size
+
+class Wrestler
+  def initialize(options={})
+    @noise = options[:noise] || "Hi"
+    @color = options[:color] || "Black"
+
+  end
+  def self.types
+    %w(rogue sorcerer fighter)
+  end
+
+  def self.create_a_fighter
+    Wrestler.new(noise: "I'm a new fighter!")
+  end
+
+end
+
+p Wrestler.create_a_fighter #< #<Fighter:0x000055cc59f97128 @noise="I'm a new fighter!", @color="Black">
+p Wrestler.types #< ["rogue", "sorcerer", "fighter"]
