@@ -1,15 +1,9 @@
+#THIS IS A VERSION 2 of the implementation
+
 
 #Define Radio class. Controls for volume, frequency, and band (AM/FM)
 #In Radio class, make Volume setter, getter, and status to see it's value.
 
-class Radio
-  attr_accessor :volume
-
-  def status
-    @volume
-  end
-
-end
 
 #Now, in the initialize method, we're going to set a default freqency (freq)
 
@@ -21,42 +15,55 @@ end
 #Make status provide frequency, band, and volume.
 
 
-
-# This is my initial implementation. It's quick and it works. Let's see what we can do to improve it.
 class Radio
   attr_accessor :volume, :freq
   attr_reader :band
 
-  def initialize(volume: 5, band: "FM", freq: 95.5)
+  @@freq_limits_AM = 540..1600
+  @@freq_limits_FM = 88..108
+  @@freq_default_AM = 540
+  @@freq_default_FM =88
+
+  def initialize(volume: 5, band: "FM", freq: @@freq_default_FM)
     @volume = volume
     @band = band
     @freq = freq
   end
 
   def self.fm
-    Radio.new(band: "FM", freq: 95.5)
+    Radio.new(band: "FM", freq: @@freq_default_FM)
   end
 
   def self.am
-    Radio.new(band: "AM", freq: 1010.0)
+    Radio.new(band: "AM", freq: @@freq_default_AM)
+  end
+
+  def volume_knob
+    volume_min = 1
+    volume_max = 10
+    volume_min..volume_max
   end
 
   def volume=(num)
-    volume_max = 10
-    volume_min = 1
+    @volume = num if volume_knob.include?(num)
+  end
 
-    if num >= volume_min && num <= volume_max
-      @volume = num
+  def freq_change(num)
+    if @band == "FM"
+      freq_change_FM(num)
+    else
+      freq_change_AM(num)
     end
   end
 
-  def freq=(num)
-    if band == "AM"
-      @freq = num if num >= 540 && num <= 1600
-    elsif band == "FM"
-      @freq = num if num >= 88 && num <= 108
-    end
+  def freq_change_FM(num)
+    @freq = num if @@freq_limits_FM.include?(num)
   end
+
+  def freq_change_AM(num)
+    @freq = num if @@freq_limits_AM.include?(num)
+  end
+
 
   def status
     puts "station: #{freq} #{band}, volume: #{volume}"
@@ -69,12 +76,13 @@ p radiofm = Radio.fm
 p radiofm.volume
 p radiofm.volume = 7
 p radiofm.volume = 11
-p radiofm.freq = 90
-p radiofm.freq = 80
+p radiofm.freq_change(90)
+p radiofm.freq_change(80)
 p radiofm
 
 
-
+#Notice that I made default RANGES for the volume knobs.
+#I also broke down the change frequency.
 
 #Below tests should pass:
 # fm = Radio.fm #@volume = 5, @band = FM, @freq = 95.5
