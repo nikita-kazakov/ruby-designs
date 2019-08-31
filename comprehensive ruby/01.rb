@@ -192,3 +192,24 @@ end
 
 roster("tito", "bito", "lulo")
 
+#Instead, we can use what's called a SPLAT argument. It treats the argument as an array.
+def roster (*players)
+  p players
+end
+
+roster("tito", "bito", "lulo") #<==tito, bito, lulo
+roster("tito", "bito", "lulo", "guido") #<==tito, bito, lulo, guido
+
+#You can also use a KEYWORD based splat (double splat). This takes HASHES.
+def which_players(**players_with_positions)
+  players_with_positions.each do |key, value|
+    p "Player: #{key}, with value: #{value}"
+  end
+end
+
+hash = {
+    "Jim": "baseball",
+    "Bob": "soccer"
+}
+which_players(hash) #<"Player: Jim, with value: baseball" "Player: Bob, with value: soccer"
+
