@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="085384ed-bff4-4ce6-9dbb-16c8b55ce740" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/comprehensive ruby/03 - APIs.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ruby-designs.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ruby-designs.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comprehensive ruby/03 - APIs.rb" beforeDir="false" afterPath="$PROJECT_DIR$/comprehensive ruby/03 - APIs.rb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,7 +11,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/ruby_designs@03___APIs.rcov" NAME="03 - APIs Coverage Results" MODIFIED="1567617979774" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/comprehensive ruby" MODULE_NAME="ruby-designs" />
+    <SUITE FILE_PATH="coverage/ruby_designs@03___APIs.rcov" NAME="03 - APIs Coverage Results" MODIFIED="1567618816337" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/comprehensive ruby" MODULE_NAME="ruby-designs" />
     <SUITE FILE_PATH="coverage/ruby_designs@Run_test__03_radio_test___ruby_designs.rcov" NAME="Run test '03_radio_test': ruby-designs Coverage Results" MODIFIED="1567184882797" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="ruby-designs" />
     <SUITE FILE_PATH="coverage/ruby_designs@02.rcov" NAME="02 Coverage Results" MODIFIED="1567286532233" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/comprehensive ruby" MODULE_NAME="ruby-designs" />
     <SUITE FILE_PATH="coverage/ruby_designs@oop2.rcov" NAME="oop2 Coverage Results" MODIFIED="1567182989517" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Skoglund Classes and Methods" MODULE_NAME="ruby-designs" />
@@ -55,8 +53,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/comprehensive ruby/03 - APIs.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+            <state relative-caret-position="426">
+              <caret line="52" column="9" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -254,7 +252,7 @@
       <updated>1567113286943</updated>
       <workItem from="1567113292326" duration="330000" />
       <workItem from="1567113674355" duration="10971000" />
-      <workItem from="1567184376997" duration="23647000" />
+      <workItem from="1567184376997" duration="24642000" />
     </task>
     <servers />
   </component>
@@ -267,7 +265,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34948000" />
+    <option name="totallyTimeSpent" value="35943000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="25" width="1922" height="936" extended-state="6" />
@@ -284,7 +282,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32914573" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.2964824" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -390,8 +388,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/comprehensive ruby/03 - APIs.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+        <state relative-caret-position="426">
+          <caret line="52" column="9" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
         </state>
       </provider>
     </entry>
