@@ -74,3 +74,53 @@ p numbers.inject{|sum, n| sum + n}
 
 
 #On Ruby Conditionals
+#
+
+#Ruby Array Join Method
+players = %w(ryu ken blanka deejay)
+p players.join("-") #"ryu-ken-blanka-deejay" returns a string.
+
+#Ruby Hashes - Key value pair.
+players_health = {
+    ryu: 100,
+    ken: 20,
+    blanka: 80
+}
+
+players_health.each do |key, value|
+  p "#{key} has a health of #{value}"
+end
+
+puts "\n\n\n"
+
+players_health.keys #[:ryu, :ken, :blanka]
+players_health.keys.each do |key|
+  p "#{key} has a health of #{players_health[key]}"
+end
+
+#It's easy to grab data from a hash because you can search by keys and get values but in an array
+#it's harder because there are no searchable keys.
+puts "\n\n\n"
+
+#Let's delete elements from a hash
+people = {
+    ryu: 100,
+    ken: 20,
+    blanka: 80
+}
+
+p people.delete(:ken) #20
+p people # {:ryu=>100, :blanka=>80}
+
+#how to insert a key value into an array?
+people[:sagat] = 60
+p people #{:ryu=>100, :blanka=>80, :sagat=>60}
+
+p people.invert #<==swaps keys and values {100=>:ryu, 80=>:blanka, 60=>:sagat}
+add_people = {
+    bob: 30,
+    susan: 20
+}
+
+#Let's say we want to merge these hashes:
+p people.merge(add_people) #{:ryu=>100, :blanka=>80, :sagat=>60, :bob=>30, :susan=>20}
