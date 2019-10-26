@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="085384ed-bff4-4ce6-9dbb-16c8b55ce740" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/newish.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ruby-designs.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ruby-designs.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mastering ruby blocks course/block_basics.rb" beforeDir="false" afterPath="$PROJECT_DIR$/mastering ruby blocks course/block_basics.rb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +54,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Ruby.newish">
+  <component name="RunManager" selected="Ruby.block_basics">
     <configuration name="02" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
       <module name="ruby-designs" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="" />
@@ -74,10 +73,10 @@
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
       <method v="2" />
     </configuration>
-    <configuration name="04-File" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
+    <configuration name="block_basics" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
       <module name="ruby-designs" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$/comprehensive ruby" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$/mastering ruby blocks course" />
       <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
       <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
       <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
@@ -88,7 +87,7 @@
           <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
         </COVERAGE_PATTERN>
       </EXTENSION>
-      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/comprehensive ruby/04-File.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/mastering ruby blocks course/block_basics.rb" />
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
       <method v="2" />
     </configuration>
@@ -148,11 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Ruby.block_basics" />
         <item itemvalue="Ruby.newish" />
         <item itemvalue="Ruby.player" />
         <item itemvalue="Ruby.travelers_haven" />
         <item itemvalue="Ruby.02" />
-        <item itemvalue="Ruby.04-File" />
       </list>
     </recent_temporary>
   </component>
@@ -174,6 +173,7 @@
       <workItem from="1567802512419" duration="6020000" />
       <workItem from="1571599406349" duration="317000" />
       <workItem from="1571697137584" duration="1531000" />
+      <workItem from="1574816816923" duration="1915000" />
     </task>
     <servers />
   </component>
@@ -234,6 +234,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ruby_designs@newish.rcov" NAME="newish Coverage Results" MODIFIED="1571697722060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="ruby-designs" />
+    <SUITE FILE_PATH="coverage/ruby_designs@block_basics.rcov" NAME="block_basics Coverage Results" MODIFIED="1574868804356" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mastering ruby blocks course" MODULE_NAME="ruby-designs" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="setValue">
