@@ -68,3 +68,25 @@ puts "Small Orders using #reject"
 small_orders = orders.reject{|order| order.total >= 300}
 puts small_orders
 space
+
+#You have all the flexibility! Reject is simply the opposite of select.
+
+#Any orders pending? Using any?
+puts orders.any? { |order| order.status == :pending}
+space
+#true
+
+
+#So what's the first order that's pending?
+puts orders.detect {|order| order.status == :pending}
+space
+
+#OR, if you forget #pending, you can do:
+puts orders.select{|order| order.status == :pending} #It returns two. I want only the first.
+space
+puts orders.select{|order| order.status == :pending}.first
+space
+
+#Here's a fun fact. The #select, #any?, #reject, #detect methods are NOT defined in the Array class.
+#They are defined in the module called Enumberable and SHARED (include) in Arrays and Hashes.
+
