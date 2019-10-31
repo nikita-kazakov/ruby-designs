@@ -46,3 +46,25 @@ big_orders = orders.select{|o| o.total >= 300}
 puts big_orders
 space
 
+#You can do the same thing but with a DO and END.
+puts "Big Orders:"
+big_orders = orders.select do |o|
+  o.total >= 300
+end
+puts big_orders
+space
+
+#FYI, if you're teaching this, it's definitely good to have an array of OBJECTS rather than
+#numbers. It's clear this way that the OBJECTS are returned
+
+#So, what about small orders? You CAN use select but select < 300 for example. FLEXIBLE.
+puts "Small Orders using #select"
+small_orders = orders.select{|order| order.total < 300}
+puts small_orders
+space
+
+#But you can also use REJECT method.
+puts "Small Orders using #reject"
+small_orders = orders.reject{|order| order.total >= 300}
+puts small_orders
+space
