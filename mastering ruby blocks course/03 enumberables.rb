@@ -90,3 +90,143 @@ space
 #Here's a fun fact. The #select, #any?, #reject, #detect methods are NOT defined in the Array class.
 #They are defined in the module called Enumberable and SHARED (include) in Arrays and Hashes.
 
+
+
+#########
+# Exercises: Part I
+#########
+
+
+scores = [83, 71, 92, 64, 98, 87, 75, 69]
+
+#Select scores greater than 80.
+high_scores = scores.select{|score| score > 80}
+p high_scores
+space
+
+#Reject scores higher than 80.
+p scores.reject{|score| score > 80}
+space
+
+#Any scores less than 70?
+p scores.any?{|score| score < 70}
+
+phrases = %w(hat bat dead fred super duper bandicoot goldeneye)
+
+#return 4 letter phrases
+p phrases.select{|phrase| phrase.length == 4}
+
+#bigger than 6 letters
+p phrases.select{|phrase| phrase.length > 6}
+space
+
+#Let's return back to the Frequent Fliers program.
+
+class Flyer
+  attr_reader :name, :email, :miles_flown
+  attr_accessor :status
+
+  def initialize(name, email, miles_flown, status=:bronze)
+    @name = name
+    @email = email
+    @miles_flown = miles_flown
+    @status = status
+  end
+
+  def to_s
+    "#{name} (#{email}): #{miles_flown} - #{status}"
+  end
+end
+
+flyers = []
+flyers << Flyer.new("Larry", "larry@example.com", 4000, :platinum)
+flyers << Flyer.new("Moe", "moe@example.com", 1000)
+flyers << Flyer.new("Curly", "curly@example.com", 3000, :gold)
+flyers << Flyer.new("Shemp", "shemp@example.com", 2000)
+
+puts flyers
+space
+
+#Who are the frequent fliers? (more than 3k miles)
+puts flyers.select{|flyer| flyer.miles_flown >= 3000}
+space
+
+
+#Who are the ones that flew below 3k miles?
+puts flyers.select{|flyer| flyer.miles_flown < 3000}
+space
+#or
+puts flyers.reject{|flyer| flyer.miles_flown >= 3000}
+space
+
+
+#Have any reached platinum status?
+p flyers.any?{|flyer| flyer.status == :platinum}
+
+
+#######
+# Enumerables - Part 2 VIDEO
+#######
+
+#What if we to divide orders into two bins? We could use select and reject and then put them in
+#two variables. However, there is shortcut with Ennumerables.
+
+puts orders
+  # customer1@example.com: $300: $300 - pending
+  # customer2@example.com: $400: $400 - completed
+  # customer3@example.com: $200: $200 - pending
+  # customer4@example.com: $100: $100 - completed
+
+#We can partition.
+p orders.partition{|order| order.status == :pending}
+#Notice that you get back an array with two arrays in it! One inner array has orders
+#with pending, and the other without.
+space
+
+pending_orders, completed_orders = orders.partition{|order| order.status == :pending}
+puts pending_orders
+puts completed_orders
+space
+#nice. done all in 1 using partition.
+
+#Let's do big orders and small orders
+big_orders, small_orders = orders.partition{|order| order.total >= 300}
+puts "Big Orders:"
+puts big_orders
+puts "Small orders:"
+puts small_orders
+space
+
+#So let's grab all the emails from the orders. We need those emails to send out to clients.
+#Here's the way we know how to do it by going through each order and putting emails in an array.
+emails = []
+puts "Newsletter emails:"
+orders.each{|order| emails << order.email.downcase}
+p emails
+
+#However, there's another quick way to do this WITHOUT creating an extra "emails" array.
+#We use #map. It simply takes the true results wraps an array around them!
+#The method #collect is the same as #map.
+emails = orders.map{|order| order.email.downcase}
+p emails
+
+#The finance department wants to know the taxes of orders in CO.
+puts "Taxes: "
+co_orders = orders.select{|order| order.state == "CO"}
+space
+
+#Let's look at how we can sum things up in ruby with #reduce
+numbers = [1,2,3,4]
+
+p numbers.reduce {|sum, number| sum + number}
+space
+
+#There is also a shortcut with #reduce.
+p numbers.reduce(:+)
+
+#Or multiply
+p numbers.reduce(:*)
+
+#But what if you have OBJECTS. More complicated.
+# You need to pass in 0 as the inital object so it knows what to start with.
+orders.reduce(0){|sum, order| sum + order.total}
