@@ -230,3 +230,47 @@ p numbers.reduce(:*)
 #But what if you have OBJECTS. More complicated.
 # You need to pass in 0 as the inital object so it knows what to start with.
 orders.reduce(0){|sum, order| sum + order.total}
+
+
+
+#######
+# Enumerables - Part II Exercise
+#######
+
+scores = [83, 71, 92, 64, 98, 87, 75, 69]
+
+#double all the points in array.
+p scores.map{|score| score * 2}
+
+#If the total of all scores is more than 600, kids get ice cream. Is total over 600?
+p scores.reduce(0){|sum, score| sum + score}
+space
+
+
+#Partition scores in evens and odds.
+even_scores, odd_scores = scores.partition{|score| score.even?}
+p even_scores
+p odd_scores
+space
+
+
+#Let's return back to frequent flyers
+
+#divide flyers into two groups: platinum and all others.
+platinum_flyers, other_flyers = flyers.partition{|flyer| flyer.status == :platinum}
+puts "Platinum Flyers:"
+puts platinum_flyers
+puts "Other Flyers:"
+puts other_flyers
+space
+
+
+#You need to print friendly name tags and status upcased. Map it:
+puts flyers.map {|flyer| "#{flyer.name} (#{flyer.status.upcase})"}
+space
+
+#You need to get distance by each flier and convert to km.
+p flyers.map{|flyer| flyer.miles_flown * 1.6}
+
+#How many total miles have your passengers flown? Sum it up!
+puts flyers.reduce(0){|sum, flyer| sum + flyer.miles_flown}
