@@ -134,7 +134,7 @@ space
 #BUT!!! You can make your code flexible by checking whether a block is passed or not like this:
 
 def roll
-  puts "Starting Method..." #NO YIELD.
+  puts "Starting Method..."
   yield if block_given?
   puts "Back in Method."
 end
@@ -142,4 +142,25 @@ end
 #Both calls work because we CHECK with if block_given?
 roll
 roll {puts "YO YO"}
+space
+
+
+#So let's see how we can give yield parameters. This one is a bit tough
+# to wrap your head around. stick with it.
+def roll
+  puts "Starting Method..."
+  number = 4
+  yield("Larry", number) if block_given?
+  yield("Moe", number) if block_given?
+  puts "Back in Method."
+end
+
+roll do |name, number|
+  puts "#{name} rolled a #{number}"
+end
+  # Starting Method...
+  # Larry rolled a 4
+  # Moe rolled a 4
+  # Back in Method.
+
 
