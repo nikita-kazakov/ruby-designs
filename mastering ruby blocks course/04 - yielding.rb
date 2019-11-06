@@ -162,5 +162,108 @@ end
   # Larry rolled a 4
   # Moe rolled a 4
   # Back in Method.
+space
 
+##########
+#Exercise
+##########
+
+#Write a three_times method that takes a block and calls it 3 times.
+
+def three_times
+  yield
+  yield
+  yield
+end
+
+three_times do
+  puts "This shows 3 times."
+end
+
+#Now pass a number through the block:
+
+def three_times
+  yield(1)
+  yield(2)
+  yield(3)
+end
+
+three_times do |number|
+  puts "#{number} situp"
+  puts "#{number} pushup"
+  puts "#{number} chinup"
+end
+space
+
+#Use the upto method to iterate from 1 to 3 instead.
+
+def three_times
+  1.upto(3) do |count|
+    yield(count)
+  end
+end
+
+three_times do |number|
+  puts "#{number} situp"
+  puts "#{number} pushup"
+  puts "#{number} chinup"
+end
+space
+
+#Let's try an example of card dealing:
+def deal
+  faces = ["Jack", "Queen", "King", "Ace"]
+  suits = ["Hearts", "Diamonds", "Spades", "Clubs"]
+  random_face = faces.sample
+  random_suit = suits.sample
+  yield random_face, random_suit
+end
+
+deal do |face, suit|
+  puts "Dealt a #{face} of #{suit}"
+end
+space
+
+
+#Let's count the score based on the length of the string selected.
+def deal
+  faces = ["Jack", "Queen", "King", "Ace"]
+  suits = ["Hearts", "Diamonds", "Spades", "Clubs"]
+  random_face = faces.sample
+  random_suit = suits.sample
+  yield random_face, random_suit
+end
+
+deal do |face, suit|
+  puts "Dealt a #{face} of #{suit}"
+  puts "You scored a #{face.length + suit.length}"
+end
+space
+
+
+#Make the block optional
+def deal
+  faces = ["Jack", "Queen", "King", "Ace"]
+  suits = ["Hearts", "Diamonds", "Spades", "Clubs"]
+  random_face = faces.sample
+  random_suit = suits.sample
+  if block_given?
+    yield random_face, random_suit
+  else
+    puts "NO DEAL. You didn't pass a block."
+  end
+end
+
+deal do |face, suit|
+  puts "Dealt a #{face} of #{suit}"
+  puts "You scored a #{face.length + suit.length}"
+end
+
+deal #<-no block passed "NO DEAL. You didn't pass a block."
+space
+
+
+#########
+#BONUS ROUND - Generic Iterator
+#########
 
