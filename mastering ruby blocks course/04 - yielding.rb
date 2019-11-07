@@ -280,3 +280,7 @@ n_times(3) do |n|
   puts "#{n} pushups"
   puts "#{n} chinups"
 end
+
+###########
+# Bonus Video: Rewriting times and each iterators
+###########

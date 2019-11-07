@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="085384ed-bff4-4ce6-9dbb-16c8b55ce740" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mastering ruby blocks course/04 - yielding.rb" beforeDir="false" afterPath="$PROJECT_DIR$/mastering ruby blocks course/04 - yielding.rb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -173,7 +172,7 @@
       <workItem from="1567802512419" duration="6020000" />
       <workItem from="1571599406349" duration="317000" />
       <workItem from="1571697137584" duration="1531000" />
-      <workItem from="1574816816923" duration="16091000" />
+      <workItem from="1574816816923" duration="16317000" />
     </task>
     <servers />
   </component>
