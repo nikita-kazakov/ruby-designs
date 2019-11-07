@@ -267,3 +267,16 @@ space
 #BONUS ROUND - Generic Iterator
 #########
 
+#Say you want to write an n_times iterator but pass in a value for how many times.
+
+def n_times(num)
+  1.upto(num) do |count|
+    yield(count)
+  end
+end
+
+n_times(3) do |n|
+  puts "#{n} situps"
+  puts "#{n} pushups"
+  puts "#{n} chinups"
+end
