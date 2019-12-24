@@ -284,3 +284,17 @@ end
 ###########
 # Bonus Video: Rewriting times and each iterators
 ###########
+
+#Here's how you can rewrite the *.each iterator
+class Array
+  def my_map
+    new_array = []
+    for item in self
+      new_array.push (yield item)
+    end
+    new_array
+  end
+end
+
+arr = [1,2,3,4]
+puts arr.my_map {|num| num * 10}

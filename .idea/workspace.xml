@@ -2,6 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="085384ed-bff4-4ce6-9dbb-16c8b55ce740" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Car/old_car/car.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Car/old_car/db.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Car2/car.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MOOM/01-barewords.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MOOM/02-method_messages.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MOOM/03 - avoid_nils.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MOOM/04 - nils as objects.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MOOM/05 - primative_obsession.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mastering ruby blocks course/03a enumberables_practice.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mastering ruby blocks course/04a - yielding_practice.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smalltalk/01.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ruby-designs.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ruby-designs.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Car/car.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Car/game.rb" beforeDir="false" afterPath="$PROJECT_DIR$/Car/old_car/game.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Car/track.rb" beforeDir="false" afterPath="$PROJECT_DIR$/Car/old_car/track.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/east.rb" beforeDir="false" afterPath="$PROJECT_DIR$/east.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mastering ruby blocks course/04 - yielding.rb" beforeDir="false" afterPath="$PROJECT_DIR$/mastering ruby blocks course/04 - yielding.rb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,10 +51,12 @@
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.ruby.settings.RubyActiveModuleSdkConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/Car/old_car" />
       <recent name="$PROJECT_DIR$/Skoglund Classes and Methods" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Skoglund Classes and Methods" />
     </key>
   </component>
@@ -53,8 +72,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Ruby.04 - yielding">
-    <configuration name="01 block_basics" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
+  <component name="RunManager" selected="Ruby.04a - yielding_practice">
+    <configuration name="01" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
+      <module name="ruby-designs" />
+      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$/smalltalk" />
+      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/smalltalk/01.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="03a enumberables_practice" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
       <module name="ruby-designs" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="" />
       <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$/mastering ruby blocks course" />
@@ -68,11 +105,11 @@
           <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
         </COVERAGE_PATTERN>
       </EXTENSION>
-      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/mastering ruby blocks course/01 block_basics.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/mastering ruby blocks course/03a enumberables_practice.rb" />
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
       <method v="2" />
     </configuration>
-    <configuration name="02 each" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
+    <configuration name="04a - yielding_practice" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
       <module name="ruby-designs" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="" />
       <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$/mastering ruby blocks course" />
@@ -86,14 +123,14 @@
           <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
         </COVERAGE_PATTERN>
       </EXTENSION>
-      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/mastering ruby blocks course/02 each.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/mastering ruby blocks course/04a - yielding_practice.rb" />
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
       <method v="2" />
     </configuration>
-    <configuration name="03 enumberables" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
+    <configuration name="05 - primative_obsession" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
       <module name="ruby-designs" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$/mastering ruby blocks course" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$/MOOM" />
       <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
       <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
       <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
@@ -104,14 +141,14 @@
           <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
         </COVERAGE_PATTERN>
       </EXTENSION>
-      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/mastering ruby blocks course/03 enumberables.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/MOOM/05 - primative_obsession.rb" />
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
       <method v="2" />
     </configuration>
-    <configuration name="04 - yielding" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
+    <configuration name="car (1)" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
       <module name="ruby-designs" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$/mastering ruby blocks course" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$/Car2" />
       <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
       <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
       <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
@@ -122,35 +159,17 @@
           <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
         </COVERAGE_PATTERN>
       </EXTENSION>
-      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/mastering ruby blocks course/04 - yielding.rb" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="newish" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
-      <module name="ruby-designs" />
-      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/newish.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/Car2/car.rb" />
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Ruby.04 - yielding" />
-        <item itemvalue="Ruby.03 enumberables" />
-        <item itemvalue="Ruby.02 each" />
-        <item itemvalue="Ruby.01 block_basics" />
-        <item itemvalue="Ruby.newish" />
+        <item itemvalue="Ruby.04a - yielding_practice" />
+        <item itemvalue="Ruby.03a enumberables_practice" />
+        <item itemvalue="Ruby.car (1)" />
+        <item itemvalue="Ruby.01" />
+        <item itemvalue="Ruby.05 - primative_obsession" />
       </list>
     </recent_temporary>
   </component>
@@ -172,7 +191,10 @@
       <workItem from="1567802512419" duration="6020000" />
       <workItem from="1571599406349" duration="317000" />
       <workItem from="1571697137584" duration="1531000" />
-      <workItem from="1574816816923" duration="16317000" />
+      <workItem from="1574816816923" duration="18295000" />
+      <workItem from="1577107624244" duration="15709000" />
+      <workItem from="1577224409576" duration="9087000" />
+      <workItem from="1577560943063" duration="4159000" />
     </task>
     <servers />
   </component>
@@ -203,48 +225,70 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="ruby-line">
+        <line-breakpoint type="ruby-line">
           <url>file://$PROJECT_DIR$/Skoglund Classes and Methods/03_radio.rb</url>
           <line>71</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
+        <line-breakpoint type="ruby-line">
           <url>file://$PROJECT_DIR$/Skoglund Classes and Methods/03_radio_v2.rb</url>
           <line>79</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
+        <line-breakpoint type="ruby-line">
           <url>file://$PROJECT_DIR$/Skoglund Classes and Methods/oop3.rb</url>
           <line>108</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
+        <line-breakpoint type="ruby-line">
           <url>file://$PROJECT_DIR$/travelers_haven.rb</url>
           <line>8</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
+        <line-breakpoint type="ruby-line">
           <url>file://$PROJECT_DIR$/tic-tac-toe/player.rb</url>
           <line>68</line>
           <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint type="ruby-line">
+          <url>file://$PROJECT_DIR$/east.rb</url>
+          <line>78</line>
+          <properties a="-1">
+            <option name="block-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint type="ruby-line">
+          <url>file://$PROJECT_DIR$/MOOM/04 - nils as objects.rb</url>
+          <line>62</line>
+          <properties a="-1">
+            <option name="block-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/ruby_designs@03_enumberables.rcov" NAME="03 enumberables Coverage Results" MODIFIED="1574888740807" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mastering ruby blocks course" MODULE_NAME="ruby-designs" />
-    <SUITE FILE_PATH="coverage/ruby_designs@04___yielding.rcov" NAME="04 - yielding Coverage Results" MODIFIED="1574892785872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mastering ruby blocks course" MODULE_NAME="ruby-designs" />
+    <SUITE FILE_PATH="coverage/ruby_designs@east2.rcov" NAME="east2 Coverage Results" MODIFIED="1577108321458" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="ruby-designs" />
+    <SUITE FILE_PATH="coverage/ruby_designs@05___primative_obsession.rcov" NAME="05 - primative_obsession Coverage Results" MODIFIED="1577225403703" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOOM" MODULE_NAME="ruby-designs" />
     <SUITE FILE_PATH="coverage/ruby_designs@newish.rcov" NAME="newish Coverage Results" MODIFIED="1571697722060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="ruby-designs" />
     <SUITE FILE_PATH="coverage/ruby_designs@block_basics.rcov" NAME="block_basics Coverage Results" MODIFIED="1574870210625" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mastering ruby blocks course" MODULE_NAME="ruby-designs" />
+    <SUITE FILE_PATH="coverage/ruby_designs@car.rcov" NAME="car Coverage Results" MODIFIED="1577224469056" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Car" MODULE_NAME="ruby-designs" />
+    <SUITE FILE_PATH="coverage/ruby_designs@02_method_messages.rcov" NAME="02-method_messages Coverage Results" MODIFIED="1577120762609" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOOM" MODULE_NAME="ruby-designs" />
+    <SUITE FILE_PATH="coverage/ruby_designs@db.rcov" NAME="db Coverage Results" MODIFIED="1577136692404" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Car" MODULE_NAME="ruby-designs" />
+    <SUITE FILE_PATH="coverage/ruby_designs@01.rcov" NAME="01 Coverage Results" MODIFIED="1577230229932" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/smalltalk" MODULE_NAME="ruby-designs" />
+    <SUITE FILE_PATH="coverage/ruby_designs@barewords.rcov" NAME="barewords Coverage Results" MODIFIED="1577116970853" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOOM" MODULE_NAME="ruby-designs" />
+    <SUITE FILE_PATH="coverage/ruby_designs@03_enumberables.rcov" NAME="03 enumberables Coverage Results" MODIFIED="1574888740807" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mastering ruby blocks course" MODULE_NAME="ruby-designs" />
+    <SUITE FILE_PATH="coverage/ruby_designs@04___yielding.rcov" NAME="04 - yielding Coverage Results" MODIFIED="1574892785872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mastering ruby blocks course" MODULE_NAME="ruby-designs" />
+    <SUITE FILE_PATH="coverage/ruby_designs@game.rcov" NAME="game Coverage Results" MODIFIED="1577135283395" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Car" MODULE_NAME="ruby-designs" />
+    <SUITE FILE_PATH="coverage/ruby_designs@ruby_debug_ide.rcov" NAME="ruby-debug-ide Coverage Results" MODIFIED="1577136905383" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/.rvm/gems/ruby-2.3.4/gems/ruby-debug-ide-0.8.0.beta6/lib" MODULE_NAME="ruby-designs" />
     <SUITE FILE_PATH="coverage/ruby_designs@02_each.rcov" NAME="02 each Coverage Results" MODIFIED="1574873313987" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mastering ruby blocks course" MODULE_NAME="ruby-designs" />
-  </component>
-  <component name="debuggerHistoryManager">
-    <expressions id="setValue">
-      <expression>
-        <expression-string>1</expression-string>
-        <language-id>ruby</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-    </expressions>
+    <SUITE FILE_PATH="coverage/ruby_designs@car__1_.rcov" NAME="car (1) Coverage Results" MODIFIED="1577313549663" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Car2" MODULE_NAME="ruby-designs" />
+    <SUITE FILE_PATH="coverage/ruby_designs@03a_enumberables_practice.rcov" NAME="03a enumberables_practice Coverage Results" MODIFIED="1577562655696" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mastering ruby blocks course" MODULE_NAME="ruby-designs" />
+    <SUITE FILE_PATH="coverage/ruby_designs@east.rcov" NAME="east Coverage Results" MODIFIED="1577109261361" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="ruby-designs" />
+    <SUITE FILE_PATH="coverage/ruby_designs@03___avoid_nils.rcov" NAME="03 - avoid_nils Coverage Results" MODIFIED="1577122029763" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOOM" MODULE_NAME="ruby-designs" />
+    <SUITE FILE_PATH="coverage/ruby_designs@04a___yielding_practice.rcov" NAME="04a - yielding_practice Coverage Results" MODIFIED="1577638220160" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mastering ruby blocks course" MODULE_NAME="ruby-designs" />
+    <SUITE FILE_PATH="coverage/ruby_designs@04___nils_as_objects.rcov" NAME="04 - nils as objects Coverage Results" MODIFIED="1577123758706" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOOM" MODULE_NAME="ruby-designs" />
   </component>
 </project>

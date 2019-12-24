@@ -1,3 +1,5 @@
+require_relative 'db'
+
 class Track
   attr_accessor :length
 

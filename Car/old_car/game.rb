@@ -1,5 +1,8 @@
+require_relative 'db'
 require_relative 'car'
 require_relative 'track'
+
+
 
 class Game
   attr_accessor :cars, :track
@@ -7,8 +10,6 @@ class Game
     @cars = []
     car_add
     track_add
-
-
   end
 
   def car_add
@@ -22,14 +23,12 @@ class Game
   end
 
   def race
-
-    5.times do
+    10.times do
       @cars.each do |car|
         car.move
         race_over?(car)
       end
     end
-
   end
 
   def race_over?(car)
