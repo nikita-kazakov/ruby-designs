@@ -84,4 +84,9 @@ puts "This car is #{car.color} and has #{car.doors}"
 
 
 #Let's apply blocks to real world examples. Wrapping text in HTML.
+def wrap_in_h1
+  "<h1>" + yield + "</h1>"
+end
 
+puts wrap_in_h1{ "This is H1"}
+#<h1>This is H1</h1>
