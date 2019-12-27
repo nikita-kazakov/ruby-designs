@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="085384ed-bff4-4ce6-9dbb-16c8b55ce740" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/mastering ruby blocks course/05 - custom iterators.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mastering ruby blocks course/04a - yielding_practice.rb" beforeDir="false" afterPath="$PROJECT_DIR$/mastering ruby blocks course/04a - yielding_practice.rb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +56,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Ruby.04a - yielding_practice">
+  <component name="RunManager" selected="Ruby.05 - custom iterators">
     <configuration name="01" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
       <module name="ruby-designs" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="" />
@@ -111,10 +111,10 @@
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
       <method v="2" />
     </configuration>
-    <configuration name="05 - primative_obsession" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
+    <configuration name="05 - custom iterators" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
       <module name="ruby-designs" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$/MOOM" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$/mastering ruby blocks course" />
       <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
       <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
       <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
@@ -125,7 +125,7 @@
           <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
         </COVERAGE_PATTERN>
       </EXTENSION>
-      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/MOOM/05 - primative_obsession.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/mastering ruby blocks course/05 - custom iterators.rb" />
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
       <method v="2" />
     </configuration>
@@ -149,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Ruby.05 - custom iterators" />
         <item itemvalue="Ruby.04a - yielding_practice" />
         <item itemvalue="Ruby.03a enumberables_practice" />
         <item itemvalue="Ruby.car (1)" />
         <item itemvalue="Ruby.01" />
-        <item itemvalue="Ruby.05 - primative_obsession" />
       </list>
     </recent_temporary>
   </component>
@@ -178,7 +178,7 @@
       <workItem from="1574816816923" duration="18295000" />
       <workItem from="1577107624244" duration="15709000" />
       <workItem from="1577224409576" duration="9087000" />
-      <workItem from="1577560943063" duration="4987000" />
+      <workItem from="1577560943063" duration="7211000" />
     </task>
     <servers />
   </component>
@@ -267,6 +267,7 @@
     <SUITE FILE_PATH="coverage/ruby_designs@04___yielding.rcov" NAME="04 - yielding Coverage Results" MODIFIED="1574892785872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mastering ruby blocks course" MODULE_NAME="ruby-designs" />
     <SUITE FILE_PATH="coverage/ruby_designs@game.rcov" NAME="game Coverage Results" MODIFIED="1577135283395" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Car" MODULE_NAME="ruby-designs" />
     <SUITE FILE_PATH="coverage/ruby_designs@ruby_debug_ide.rcov" NAME="ruby-debug-ide Coverage Results" MODIFIED="1577136905383" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/.rvm/gems/ruby-2.3.4/gems/ruby-debug-ide-0.8.0.beta6/lib" MODULE_NAME="ruby-designs" />
+    <SUITE FILE_PATH="coverage/ruby_designs@05___custom_iterators.rcov" NAME="05 - custom iterators Coverage Results" MODIFIED="1577673264089" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mastering ruby blocks course" MODULE_NAME="ruby-designs" />
     <SUITE FILE_PATH="coverage/ruby_designs@02_each.rcov" NAME="02 each Coverage Results" MODIFIED="1574873313987" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mastering ruby blocks course" MODULE_NAME="ruby-designs" />
     <SUITE FILE_PATH="coverage/ruby_designs@car__1_.rcov" NAME="car (1) Coverage Results" MODIFIED="1577313549663" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Car2" MODULE_NAME="ruby-designs" />
     <SUITE FILE_PATH="coverage/ruby_designs@03a_enumberables_practice.rcov" NAME="03a enumberables_practice Coverage Results" MODIFIED="1577562655696" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mastering ruby blocks course" MODULE_NAME="ruby-designs" />
