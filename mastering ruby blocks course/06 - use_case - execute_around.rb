@@ -57,3 +57,48 @@ space
 
 
 
+##ANOTHER EXAMPLE##
+##WATER SENSOR DATA##
+
+class Sensor
+  def temperature
+    rand(100..200)
+  end
+
+  def level
+    rand(1..5)
+  end
+end
+
+sensor = Sensor.new
+puts "checking water temperature"
+if sensor.temperature < 150
+  puts "OK"
+else
+  puts "FAILED"
+end
+
+puts "Checking Water Level:"
+if sensor.level > 3
+  puts "OK"
+else
+  puts "FAILED"
+end
+
+#This code above is NOT WRONG. It's okay. It's just a lot. We can simplify it.
+
+def with_checking(description)
+  puts "Checking #{description}"
+  result = yield
+  if result
+    puts "OK"
+  else
+    puts "FAILED"
+  end
+end
+
+space
+
+#Look how succinct this code is.
+with_checking("temperature"){sensor.temperature < 150}
+with_checking("level"){ sensor.level < 5 }

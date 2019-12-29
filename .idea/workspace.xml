@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="085384ed-bff4-4ce6-9dbb-16c8b55ce740" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/mastering ruby blocks course/05 - custom iterators practice.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mastering ruby blocks course/06 - use_case - execute_around.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mastering ruby blocks course/06 - use_case - execute_around.rb" beforeDir="false" afterPath="$PROJECT_DIR$/mastering ruby blocks course/06 - use_case - execute_around.rb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -180,7 +179,7 @@
       <workItem from="1574816816923" duration="18295000" />
       <workItem from="1577107624244" duration="15709000" />
       <workItem from="1577224409576" duration="9087000" />
-      <workItem from="1577560943063" duration="11483000" />
+      <workItem from="1577560943063" duration="12023000" />
     </task>
     <servers />
   </component>
@@ -268,7 +267,7 @@
     <SUITE FILE_PATH="coverage/ruby_designs@03_enumberables.rcov" NAME="03 enumberables Coverage Results" MODIFIED="1574888740807" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mastering ruby blocks course" MODULE_NAME="ruby-designs" />
     <SUITE FILE_PATH="coverage/ruby_designs@04___yielding.rcov" NAME="04 - yielding Coverage Results" MODIFIED="1574892785872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mastering ruby blocks course" MODULE_NAME="ruby-designs" />
     <SUITE FILE_PATH="coverage/ruby_designs@game.rcov" NAME="game Coverage Results" MODIFIED="1577135283395" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Car" MODULE_NAME="ruby-designs" />
-    <SUITE FILE_PATH="coverage/ruby_designs@06___use_case___execute_around.rcov" NAME="06 - use_case - execute_around Coverage Results" MODIFIED="1577677536175" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mastering ruby blocks course" MODULE_NAME="ruby-designs" />
+    <SUITE FILE_PATH="coverage/ruby_designs@06___use_case___execute_around.rcov" NAME="06 - use_case - execute_around Coverage Results" MODIFIED="1577678251467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mastering ruby blocks course" MODULE_NAME="ruby-designs" />
     <SUITE FILE_PATH="coverage/ruby_designs@05___custom_iterators_practice.rcov" NAME="05 - custom iterators practice Coverage Results" MODIFIED="1577676579307" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mastering ruby blocks course" MODULE_NAME="ruby-designs" />
     <SUITE FILE_PATH="coverage/ruby_designs@ruby_debug_ide.rcov" NAME="ruby-debug-ide Coverage Results" MODIFIED="1577136905383" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/.rvm/gems/ruby-2.3.4/gems/ruby-debug-ide-0.8.0.beta6/lib" MODULE_NAME="ruby-designs" />
     <SUITE FILE_PATH="coverage/ruby_designs@05___custom_iterators.rcov" NAME="05 - custom iterators Coverage Results" MODIFIED="1577674884712" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mastering ruby blocks course" MODULE_NAME="ruby-designs" />
