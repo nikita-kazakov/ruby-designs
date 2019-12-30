@@ -100,5 +100,64 @@ end
 space
 
 #Look how succinct this code is.
+#The beauty of this is that the actual checking is obscured in the with_checking.
+#There's flexibility. You can simply change the with_checking method and change propagates.
 with_checking("temperature"){sensor.temperature < 150}
 with_checking("level"){ sensor.level < 5 }
+
+space
+space
+
+
+
+##### Real Life Example #2 - HTML TAGS! #####
+#HAML. You've seen it before. Rails does this too.
+
+def h1
+  puts "<h1>" + yield + "</h1>"
+end
+h1{"Breaking News"}
+
+space
+
+#let's define an h2 method also.
+def h2
+  puts "<h2>" + yield + "</h2>"
+end
+
+h2{"This is H2"}
+
+space
+
+#This is great, but let's increase our flexibility! Let's be able to
+#pass in ANY tag we want to convert to html.
+
+
+def tag(tag)
+  print "<#{tag}>"
+  print yield
+  print "</#{tag}>"
+end
+
+tag(:h1){"Breaking News!"}
+tag(:h2){"This is H2"}
+tag(:p){"This is paragraph"}
+# <h1>Breaking News!</h1>
+# <h2>This is H2</h2>
+# <p>This is paragraph</p>
+
+space
+
+tag(:ul) do
+  tag(:li) { "It sparkles!"}
+  tag(:li) { "It shines!"}
+  tag(:li) { "It mesmerizes!"}
+end
+
+# <ul>
+#   <li>It sparkles!</li>
+#   <li>It shines!</li>
+#   <li>It mesmerizes!</li>
+# </ul>
+
+#Dude, write the link_to helper.
