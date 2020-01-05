@@ -53,3 +53,16 @@ console.log(numbers_array)
 // In JS, you can have MULTIPLE DATA TYPES in the same array. For example:
 let array_types = ['apple', 'orange', 5, undefined, true]
 console.log(array_types)
+
+// Selecting elements in array. Same as ruby.
+console.log(numbers_array[1])   //orange
+
+// Selecting last element in array. Not as syntactically sweet as ruby.
+console.log(numbers_array[numbers_array.length - 1])    //pear
+
+// Push an element
+array_types.push('mangos')
+console.log(array_types)
+
+// Pop an element. Will remove the last one.
+array_types.pop()
