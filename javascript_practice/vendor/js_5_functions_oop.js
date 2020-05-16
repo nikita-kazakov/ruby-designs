@@ -137,3 +137,16 @@ console.log(nikita.getBirthYear())      // 1901
 console.log(nikita.getFullName())       // Nikita Kaz
 
 
+// Random stuff
+// In your browser window, the WINDOW object is the parent object. The big daddy.
+console.log(window)
+// Notice that window object has JQUERY in it! also has nikita object and all objects we created here!
+// To run JQUERY, you need to run it inside the WINDOW OBJECT. That's why.
+// Since window is the top level, we don't need to do anything to run things in window.
+console.log(window.document)
+
+// Use console.log to see exactly what happens when using Jquery. It will show you what's possible!
+// Console.log is POWERFUL AS HELL.
+console.log($('.container'))
+
+//Finish the crash course video if you want to learn how to manipulate the DOM with ES6.
