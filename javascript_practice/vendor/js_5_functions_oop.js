@@ -20,7 +20,6 @@ function addNums(num1 = 1, num2 = 2){
 addNums()                    // 3. Uses defaults.
 addNums(3,3)      // 6. Uses passed numbers.
 
-
 // Use RETURN to return whatever you need from functions.
 // In Ruby the last line is returned automatically. Not in JS. You have to say 'return'
 
