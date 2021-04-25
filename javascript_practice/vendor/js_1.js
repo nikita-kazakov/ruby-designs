@@ -7,7 +7,12 @@
 
 // Use your developer tools (F12 in browser) as you go through this course.
 
-console.log("This should show up in the console.")
+const a = 1
+const b = 2
+const c = a + b
+
+console.log('This should show up in the console.')
+'a'.
 
 // The best documentation for Javascript is MDN:
 // https://developer.mozilla.org/en-US/docs/Web/API/console
@@ -19,13 +24,13 @@ console.log(console)
 console.error("You didn't specify a parameter") // Shows it in yellow background.
 console.warn("You called the JS file twice. Don't do that.") // Red background.
 
-//VARIABLES - var, let, const
+// VARIABLES - var, let, const
 
-//var - don't use it. It is a GLOBAL variable. In old JS, this was all that was available.
+// var - don't use it. It is a GLOBAL variable. In old JS, this was all that was available.
 var global_variable_unfortunately = "This is a global variable from var. Don't use it anymore."
 console.log(global_variable_unfortunately)
 
-//let - This was added with ES6. They follow block scope (not global). With let, you can reassign values.
+// let - This was added with ES6. They follow block scope (not global). With let, you can reassign values.
 // notice how I reassign age to 31 and it works. It's MUTABLE.
 let age = 30
 

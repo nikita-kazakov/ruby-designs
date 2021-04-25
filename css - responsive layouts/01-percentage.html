@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head></head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<meta charset="utf-8">
+<meta content="ie=edge" http-equiv="x-ua-compatible">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<title></title>
+<link href="01.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</html>
+<body>
+<p>There's a child within the parent but it has no height. It is therefore not visible.</p>
+<div class="section-01">
+<div class="parent">
+<div class="child"></div>
+</div>
+</div>
+<p>Let's give the child a height of 100px.</p>
+<div class="section-02">
+<div class="parent">
+<div class="child"></div>
+</div>
+</div>
+<p>Be careful about setting widths. Don't do it prematurely. (parent is set to 700px)</p>
+<div class="section-03">
+<div class="parent">
+<div class="child"></div>
+</div>
+</div>
+<p>Let's set the margin left and right to auto to center this div. Try responsive mode. It's terrible. It's not responsive at all.</p>
+<p>You get side scrolling. Media query is not the solution here.</p>
+<div class="section-04">
+<div class="parent">
+<div class="child"></div>
+</div>
+</div>
+<p>Get rid of the width and notice that this div is responsive by default! Width ruined responsiveness.</p>
+<div class="section-05">
+<div class="parent">
+<div class="child"></div>
+</div>
+</div>
+<p>
+Any block element in css has a width of 100% by default. This is a div or a paragraph.
+The child div will take the full width of the parent div. In our case, the parent div is 100% and therefore the child takes 100%.
+The parent is within the body tag (100% also).
+</p>
+<p>
+I'll show you, let's for example make the parent 80% width. Try it in responsive mode. It will ALWAYS be 80% of it's
+parent container (which is the body).
+</p>
+<p>Lesson Learned: Work in percentages. They are fluid.</p>
+<div class="section-06">
+<div class="parent">
+<div class="child"></div>
+</div>
+</div>
+<p>What if we set a hard 900px width to the child element? Try responsive mode. Oh no! We have overflow.</p>
+<div class="section-07">
+<div class="parent">
+<div class="child"></div>
+</div>
+</div>
+<p>Let's set child to 50% width instead. The child will be 50% of it's parent container, the parent, which is already set at 80% width. That's the cascading part.</p>
+<div class="section-08">
+<div class="parent">
+<div class="child"></div>
+</div>
+</div>
+<p>Setting heights isn't good either. Look at how the text will overflow when a child height is set.</p>
+<div class="section-09">
+<div class="parent">
+<div class="child">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt, metus sit amet pretium ornare, tortor nibh mollis nisi, in blandit leo mauris id metus. Mauris vel efficitur ipsum. Nam molestie congue nulla euismod mollis. Mauris in elit nec ligula dignissim consequat non ac magna. Morbi ut quam eu arcu condimentum fermentum vulputate quis massa. Donec eget massa mauris. Mauris eu est nisi. Pellentesque molestie tincidunt mi imperdiet maximus. Vestibulum vel orci hendrerit, cursus libero ac, euismod orci. Curabitur semper tempus metus at iaculis.
+</div>
+</div>
+</div>
+<p>Remove the height and the box automatically fits the text..</p>
+<div class="section-10">
+<div class="parent">
+<div class="child">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt, metus sit amet pretium ornare, tortor nibh mollis nisi, in blandit leo mauris id metus. Mauris vel efficitur ipsum. Nam molestie congue nulla euismod mollis. Mauris in elit nec ligula dignissim consequat non ac magna. Morbi ut quam eu arcu condimentum fermentum vulputate quis massa. Donec eget massa mauris. Mauris eu est nisi. Pellentesque molestie tincidunt mi imperdiet maximus. Vestibulum vel orci hendrerit, cursus libero ac, euismod orci. Curabitur semper tempus metus at iaculis.
+</div>
+</div>
+</div>
+<p>What you really want to do is add padding and margin to your child to give it room to breathe and to give it dimensions.</p>
+<div class="section-11">
+<div class="parent">
+<div class="child">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt, metus sit amet pretium ornare, tortor nibh mollis nisi, in blandit leo mauris id metus. Mauris vel efficitur ipsum. Nam molestie congue nulla euismod mollis. Mauris in elit nec ligula dignissim consequat non ac magna. Morbi ut quam eu arcu condimentum fermentum vulputate quis massa. Donec eget massa mauris. Mauris eu est nisi. Pellentesque molestie tincidunt mi imperdiet maximus. Vestibulum vel orci hendrerit, cursus libero ac, euismod orci. Curabitur semper tempus metus at iaculis.
+</div>
+</div>
+</div>
+</body>
+<h2>EM vs REM Sizing</h2>
+<p>em units are a font sizing technique and it's in relationship to the parent container. Generally, 1 em is 16px because 16px is the standard font size of the body.</p>
+<div class="sizing-01">
+<div class="parent">
+<h1>Title (1em takes on 16 pixels.)</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt, metus sit amet pretium ornare.</p>
+</div>
+</div>
+<div class="sizing-02">
+<div class="parent">
+<h1>Title (I made the parent element font size: 20). This 1 em heading is not font size 20px.</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt, metus sit amet pretium ornare.</p>
+</div>
+</div>
+<p>Lesson Learned: Don't use em for font sizes. You'll get lost in the cascading effects.</p>
+<p>REM is based on (root em). It fixes the em cascading problem. It's based on html font-sizing. So all you need to do is:</p>
+html {
+  font-size: 16px
+  }
+<p>You can now use rems and they will be based off the font size 16 on your entire site! You can use REM units for fonts.</p>
+<p>A good place to use ems is for padding buttons. Then the padding will increase based on the text size of the text in the button.</p>
+<p>It's easy to build small, medium, and large buttons this way. Or you could manually scale the padding and margins as you need.</p>
+<p>Use ems when you use media queries. It's beautiful..</p>
+<div class="sizing-02">
+<div class="btn">Click Here</div>
+<div class="btn">Click Here</div>
+</div>

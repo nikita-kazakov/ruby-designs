@@ -1,0 +1,188 @@
+* { box-sizing: border-box; }
+body{ margin: 0;}
+
+.section-01 {
+  .parent {
+    background-color: #0c5460;
+    padding: 50px;
+  }
+
+  .child {
+    background-color: #9fcdff;
+  }
+}
+
+.section-02 {
+  .parent {
+    background-color: #0c5460;
+    padding: 50px;
+  }
+
+  .child {
+    background-color: #9fcdff;
+    height: 100px;
+  }
+}
+
+.section-03 {
+  .parent {
+    background-color: #0c5460;
+    padding: 50px;
+    width: 700px;
+  }
+
+  .child {
+    background-color: #9fcdff;
+    height: 100px;
+  }
+}
+
+.section-04 {
+  .parent {
+    background-color: #0c5460;
+    padding: 50px;
+    width: 700px;
+    margin: 0 auto 0 auto;
+  }
+
+  .child {
+    background-color: #9fcdff;
+    height: 100px;
+  }
+}
+
+.section-05 {
+  .parent {
+    background-color: #0c5460;
+    padding: 50px;
+    margin: 0 auto 0 auto;
+  }
+
+  .child {
+    background-color: #9fcdff;
+    height: 100px;
+  }
+}
+
+.section-06 {
+  .parent {
+    background-color: #0c5460;
+    padding: 50px;
+    margin: 0 auto 0 auto;
+    width: 80%;
+  }
+
+  .child {
+    background-color: #9fcdff;
+    height: 100px;
+  }
+}
+
+.section-07 {
+  .parent {
+    background-color: #0c5460;
+    padding: 50px;
+    margin: 0 auto 0 auto;
+    width: 80%;
+  }
+
+  .child {
+    background-color: #9fcdff;
+    height: 100px;
+    width: 900px;
+  }
+}
+
+.section-08 {
+  .parent {
+    background-color: #0c5460;
+    padding: 50px;
+    margin: 0 auto 0 auto;
+    width: 80%;
+  }
+
+  .child {
+    background-color: #9fcdff;
+    height: 100px;
+    width: 50%;
+  }
+}
+
+.section-09 {
+  .parent {
+    background-color: #0c5460;
+    padding: 50px;
+    margin: 0 auto 0 auto;
+    width: 80%;
+  }
+
+  .child {
+    background-color: #9fcdff;
+    height: 100px;
+    width: 50%;
+  }
+}
+
+.section-10 {
+  .parent {
+    background-color: #0c5460;
+    padding: 50px;
+    margin: 0 auto 0 auto;
+    width: 80%;
+  }
+
+  .child {
+    background-color: #9fcdff;
+    width: 50%;
+  }
+}
+
+.section-11 {
+  .parent {
+    background-color: #0c5460;
+    padding: 50px;
+    margin: 0 auto 0 auto;
+    width: 80%;
+  }
+
+  .child {
+    background-color: #9fcdff;
+    width: 50%;
+    padding: 1.5em;
+  }
+}
+
+.sizing-01 {
+  .parent {
+    border: blue solid 2px;
+
+    h1 {
+      font-size: 1em;
+    }
+  }
+}
+
+.sizing-02 {
+  .parent {
+    font-size: 20px;
+    border: blue solid 2px;
+
+    h1 {
+      font-size: 1em;
+    }
+  }
+
+  .btn {
+    display: inline-block;
+    background-color: #0c5460;
+    padding: 1em;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    //max-width: 500px;
+  }
+
+  .baa:nth-of-type(3){
+
+  }
+}

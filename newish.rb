@@ -10,3 +10,20 @@ puts end_date - start_date
 1.upto(2).each do |count|
   puts count
 end
+
+
+class Car
+
+  def initialize
+
+  end
+
+end
+
+
+
+
+
+
+
+

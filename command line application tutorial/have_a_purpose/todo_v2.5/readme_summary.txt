@@ -1,0 +1,1 @@
+Let's modify this so that if a user runs a command that's NOT available, the command line app send him / her to help.
